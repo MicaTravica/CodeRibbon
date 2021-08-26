@@ -23,7 +23,8 @@
     "CodeRibbonManager": "deserialize_CR_stuff",
     "CodeRibbonRibbonContainer": "deserialize_CR_stuff",
     "CodeRibbonSingleStrip": "deserialize_CR_stuff",
-    "CodeRibbonPatch": "deserialize_CR_stuff"
+    "CodeRibbonPatch": "deserialize_CR_stuff",
+    "NewItem": "deserialize_CR_stuff"
   },
   "dependencies": {
     "async": "0.2.6",

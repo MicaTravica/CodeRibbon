@@ -3,6 +3,7 @@ Austin Henley (azhenley)
 Ben Klein (robobenklein)
 Thomas Keyes (tkeyes25)
 *et al* (`git shortlog -sn`)
+Copyright (c) 2021 Milica Travica (MicaTravica)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

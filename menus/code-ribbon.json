@@ -19,6 +19,18 @@
       {
         "type": "separator"
       }
+    ],
+    "atom-text-editor, .overlayer": [
+      {
+        "type": "separator"
+      },
+      {
+        "label": "New item",
+        "command": "code-ribbon:new-item"
+      },
+      {
+        "type": "separator"
+      }
     ]
   }
 }

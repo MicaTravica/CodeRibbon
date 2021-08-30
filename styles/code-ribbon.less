@@ -14,6 +14,7 @@ atom-pane-container.cr-primary-container {
   overflow-y: hidden;
   scroll-snap-type: x proximity;
   scroll-behavior: smooth;
+
   &.cr-overview-active,
   &.cr-managed-scroll-active {
     scroll-snap-type: none;
@@ -37,10 +38,10 @@ atom-pane-container.cr-primary-container {
 
     atom-pane.cr-patch {
       height: 100%;
-      transition:
-        transform 0.5s ease, flex-basis 0.5s ease;
+      transition: transform 0.5s ease, flex-basis 0.5s ease;
       will-change: transform;
     }
+
     atom-pane-axis.cr-vertical-strip {
       // cols don't change width
       flex-grow: 0;
@@ -58,6 +59,7 @@ atom-pane-container.cr-primary-container {
     //   transition: 0.5s ease margin;
     // }
   }
+
   .cr-ribbon-container::after {
     content: "";
     display: block;
@@ -69,6 +71,7 @@ atom-pane-container.cr-primary-container {
     transition: flex .5s linear;
     transition-delay: 1s;
   }
+
   .cr-ribbon-container.cr-overview-active::after {
     // flex: 0 0 100%;
     // transition: flex 0s linear;
@@ -82,15 +85,18 @@ atom-pane-container.cr-primary-container {
     atom-pane.cr-patch {
       transform: scale(0.9);
     }
+
     atom-pane.cr-patch > .item-views,
-    // atom-pane.cr-patch > .tab-bar .close-icon {
+      // atom-pane.cr-patch > .tab-bar .close-icon {
     atom-pane.cr-patch > .tab-bar {
       pointer-events: none;
     }
+
     atom-pane.cr-patch.active {
       z-index: 1;
       box-shadow: 0px 0px 50px 15px @active-highlight-color;
     }
+
     atom-pane.cr-patch:hover {
       z-index: 2;
       box-shadow: 0px 0px 50px 15px @hover-highlight-color;
@@ -105,6 +111,7 @@ atom-pane-container.cr-primary-container {
   atom-pane-axis.cr-ribbon-container {
     atom-pane-axis.cr-vertical-strip.cr-zoomed {
       flex-basis: 100% !important;
+
       atom-pane.cr-patch.cr-zoomed {
         flex-basis: 100% !important;
       }
@@ -124,20 +131,24 @@ atom-pane-container.cr-primary-container {
         flex: 0 0 auto;
         // overflow: unset;
       }
+
       ol.list-group {
         flex: 1 1 auto;
       }
+
       li.FuzzyFinderResult {
         .file {
           display: inline-flex;
           flex-grow: 1;
           margin-left: 2px;
         }
+
         .path {
           display: inline-flex;
           position: absolute;
           right: 2em;
         }
+
         .status {
           position: absolute;
           right: 0;
@@ -157,22 +168,25 @@ atom-pane-container.cr-primary-container {
     .tab-bar {
       background-color: lighten(@tab-background-color-active, 10%) !important;
     }
+
     .tab.active {
       background-color: lighten(@tab-background-color-active, 10%) !important;
     }
 
     // empty patches are entirely highlited
     // this may be removed with the fuzzy-finder search in the middle
-    background-color: lighten(@base-background-color, 10%);
+    //background-color: lighten(@base-background-color, 10%);
   }
 
   .cr-patch .tab-bar li.placeholder {
     display: none;
   }
+
   .cr-patch .tab-bar:empty {
     // because default themes makes :empty patches display none
     display: inherit;
   }
+
   .cr-patch .tab-bar::before {
     content: "CodeRibbon\00a0Patch";
     position: absolute;
@@ -181,6 +195,7 @@ atom-pane-container.cr-primary-container {
     font-weight: bold;
     align-self: center;
   }
+
   .cr-patch .tab-bar .tab .title {
     font-size: 1.4em;
     text-align: center;
@@ -206,7 +221,13 @@ atom-pane-container.cr-primary-container.cr-dev-active {
   .cr-patch {
     // border: 2px solid rebeccapurple;
   }
+
   .cr-patch.active {
     // border: 2px solid blue;
   }
+}
+
+.no-git {
+  text-align: center;
+  margin-top: 100px;
 }

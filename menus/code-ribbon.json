@@ -25,8 +25,20 @@
         "type": "separator"
       },
       {
-        "label": "New item",
-        "command": "code-ribbon:new-item"
+        "label": "Network graph",
+        "command": "code-ribbon:network-graph"
+      },
+      {
+        "type": "separator"
+      }
+    ],
+    ".tree-view .full-menu [is*='tree-view-']": [
+      {
+        "type": "separator"
+      },
+      {
+        "label": "Network graph",
+        "command": "code-ribbon:network-graph"
       },
       {
         "type": "separator"

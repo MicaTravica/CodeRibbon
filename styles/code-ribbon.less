@@ -247,9 +247,71 @@ atom-pane-container.cr-primary-container.cr-dev-active {
   z-index: 1;
   position: absolute;
   background-color: @background-color-selected;
+  border-bottom-right-radius: 2px;
 }
 
 .network {
   height: 100%;
 }
 
+.network-and-show-commit {
+  height: 50%;
+}
+
+.show-commit {
+  height: 50%;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: @background-color-highlight;
+  padding: 3px;
+  overflow-x: auto;
+}
+
+.commit-file {
+  border-style: solid;
+  border-width: 2px;
+  border-color: @background-color-highlight;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.td-left {
+  padding: 2px;
+}
+
+.td-right {
+  float: right;
+  margin: 2px;
+}
+
+.content {
+  overflow-x: auto;
+}
+
+.row-number {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: @background-color-highlight;
+}
+
+.line {
+  font-size: 12px;
+  white-space: break-spaces;
+  contain: layout paint style;
+  display: block;
+  unicode-bidi: embed;
+  font-family: monospace;
+  background-color: @background-color-highlight;
+}
+
+.added {
+  background-color: fade(#1aff5b, 15%) !important;
+}
+
+.deleted {
+  background-color: fade(#ff5266, 15%) !important;
+}
